@@ -4,7 +4,7 @@
 
     function getAll(callback){
         $.ajax({
-            "url": "http://127.0.0.1:5000/myMovies",
+            "url": "/myMovies",
             "method":"GET",
             "data":"",
             "dataType": "JSON",
@@ -25,7 +25,7 @@
         
         console.log(JSON.stringify(movie));
         $.ajax({
-            "url": "http://127.0.0.1:5000/myMovies",
+            "url": "/myMovies",
             "method":"POST",
             "data":JSON.stringify(movie),
             "dataType": "JSON",
@@ -43,7 +43,7 @@
     function updateMovie(movie, callback){
         console.log("updating: " + JSON.stringify(movie));
         $.ajax({
-            "url": "http://127.0.0.1:5000/myMovies/"+encodeURI(movie.id),
+            "url": "/myMovies/"+encodeURI(movie.id),
             "method":"PUT",
             "data":JSON.stringify(movie),
             "dataType": "JSON",
@@ -62,7 +62,7 @@
         
         //console.log(JSON.stringify('deleting '+id));
         $.ajax({
-            "url": "/http://127.0.0.1:5000/myMovies/"+ id,
+            "url": "/myMovies/"+ id,
             "method":"DELETE",
             "data":"",
             "dataType": "JSON",
