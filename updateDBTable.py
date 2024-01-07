@@ -43,10 +43,6 @@ for dbRow in dbRows:
 #for movie in allMovies:
 #  print(movie)
 
-# Get all unique values from column Year
-print("testing getUniqueValues")
-values = movieDAO.getUniqueValues()
-
 
 # Delete movie id = 7 in the movie table
 #movieDAO.delete(10)
