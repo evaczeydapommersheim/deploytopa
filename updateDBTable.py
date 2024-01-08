@@ -11,9 +11,9 @@ dbRows = [
     #("Drama, Romance, Comedy", "As Good as it gets", "James L. Brooks", "Jack Nicholson", 1997),
     #("Drama, Romance, Comedy", "The Terminal", "Steven Spielberg", "Tom Hanks", 2004),
     #("Action", "De Ja Vu", "Tony Scott", "Denzel Washington", 2006)
-    ("Crime, Drama, Mystery", "Seven", "David Fincher", "Brad Pitt, Morgan Freeman", 1995)
-    ("Drama, Romance", "Good Will Hunting", "Gus Van Sant", "Robin Williams", 1997)
-    ("Comedy, Drama, Romance", "It's Complicated", "Nancy Meyers", "Meryl Streep, Alec Baldwin", 2009)
+    ("Crime, Drama, Mystery", "Seven", "David Fincher", "Brad Pitt, Morgan Freeman", 1995),
+    ("Drama, Romance", "Good Will Hunting", "Gus Van Sant", "Robin Williams", 1997),
+    ("Comedy, Drama, Romance", "It's Complicated", "Nancy Meyers", "Meryl Streep, Alec Baldwin", 2009),
     ("Comedy, Drama, Romance", "Something's gotta give", "Nancy Meyers", "Diane Keaton, Jack Nicholson, Keanu Reeves", 2003)
 
 ]
