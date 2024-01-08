@@ -21,33 +21,13 @@
           border-bottom: 1px solid #ddd;
         }
         
-        tr.header, tr:hover {background-color: coral;}
-
-        * {
-          box-sizing: border-box;
-        }
-
-        #myInput {
-          background-image: url('/css/searchicon.png');
-          background-position: 10px 10px;
-          background-repeat: no-repeat;
-          width: 100%;
-          font-size: 16px;
-          padding: 12px 20px 12px 40px;
-          border: 1px solid rgb(219, 114, 100);
-          margin-bottom: 12px;
-        }
-
-    </style>    
+        tr:hover {background-color: coral;}
+        </style>    
     <body>
         <h1><img src="movie.jpeg"><br/>Movies</h1>
-        <p>These are some of the movies I enjoy watching. The list could go on.</p>
-
         <div> 
-            <button id="showCreateButton" onclick="showCreate()">Add a movie</button><br/><br/>
+            <button id="showCreateButton" onclick="showCreate()">Create a movie</button><br/><br/>
         </div>
-
-        <input type="text" id="myInput" onkeyup="mySearchFunction()" placeholder="Search for actor.." title="Type in a name">
 
         <div>
             <table class="table" id="movieTable">
@@ -57,7 +37,11 @@
                         <th>Title</th>
                         <th>Director</th>
                         <th>Actor</th>
-                        <th>Year</th>
+                        <th>Year 
+                            <select name = "Year-dropdown" id="Year-dropdown" onchange="applyFilter()">
+                                <option value = "Year">Select</option>
+                            </select>
+                        </th>
                         <th>Update</th>
                         <th>Delete</th>
                 </tr>
@@ -81,25 +65,6 @@
     </body>
 
     <script>
-    function mySearchFunction() {
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("myInput");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("movieTable");
-        tr = table.getElementsByTagName("tr");
-        for (i = 0; i < tr.length; i++) {
-          td = tr[i].getElementsByTagName("td")[4];
-          if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              tr[i].style.display = "";
-            } else {
-              tr[i].style.display = "none";
-            }
-          }       
-        }
-    }
-
     function showCreate(){
         document.getElementById('createUpdateForm').style.display="block"
         document.getElementById('doCreateButton').style.display="block"
@@ -224,7 +189,7 @@
         var rowElement = r.parentNode.parentNode;
         id = rowElement.getAttribute("id")
         console.log("deleting "+id)
-        deleteMovie(id, processCreateResponse)
+        deleteMovie(id, doNothing)
 
         var index = rowElement.rowIndex;
         tableElement.deleteRow(index);
@@ -277,7 +242,7 @@
             console.log(result)
             return "done"
         }
-
+    
         getAll(processGetAllResponse)
 
     </script>
