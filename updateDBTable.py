@@ -4,13 +4,18 @@ from movieDAO import movieDAO
  
 # Create movies in the movie table
 dbRows = [
-    ("Drama", "The Shawshank Redemption", "Frank Darabont", "Morgan Freeman", 1994),
-    ("Drama, Mystery, Thriller", "The Sixth Sense", "M. Night Shyamalan", "Bruce Willis", 1999),
-    ("Drama, Romance", "Forrest Gump", "Robert Zemeckis", "Tom Hanks",1994),
-    ("Drama, Romance, Comedy", "The Terminal", "Steven Spielberg", "Tom Hanks", 2004),
-    ("Drama, Romance, Comedy", "As Good as it gets", "James L. Brooks", "Jack Nicholson", 1997),
-    ("Drama, Romance, Comedy", "The Terminal", "Steven Spielberg", "Tom Hanks", 2004),
-    ("Action", "De Ja Vu", "Tony Scott", "Denzel Washington", 2006)
+    #("Drama", "The Shawshank Redemption", "Frank Darabont", "Morgan Freeman", 1994),
+    #("Drama, Mystery, Thriller", "The Sixth Sense", "M. Night Shyamalan", "Bruce Willis", 1999),
+    #("Drama, Romance", "Forrest Gump", "Robert Zemeckis", "Tom Hanks",1994),
+    #("Drama, Romance, Comedy", "The Terminal", "Steven Spielberg", "Tom Hanks", 2004),
+    #("Drama, Romance, Comedy", "As Good as it gets", "James L. Brooks", "Jack Nicholson", 1997),
+    #("Drama, Romance, Comedy", "The Terminal", "Steven Spielberg", "Tom Hanks", 2004),
+    #("Action", "De Ja Vu", "Tony Scott", "Denzel Washington", 2006)
+    ("Crime, Drama, Mystery", "Seven", "David Fincher", "Brad Pitt, Morgan Freeman", 1995)
+    ("Drama, Romance", "Good Will Hunting", "Gus Van Sant", "Robin Williams", 1997)
+    ("Comedy, Drama, Romance", "It's Complicated", "Nancy Meyers", "Meryl Streep, Alec Baldwin", 2009)
+    ("Comedy, Drama, Romance", "Something's gotta give", "Nancy Meyers", "Diane Keaton, Jack Nicholson, Keanu Reeves", 2003)
+
 ]
 
 for dbRow in dbRows:
