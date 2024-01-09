@@ -2,7 +2,7 @@
 ---
 ## **ATU Course** - Higher Diploma in Science in Data Analytics
 ## **Module** - 23-24: 4682 -- DATA REPRESENTATION
-## **Lecture **- Andrew Beatty<br><br>
+## **Lecturer**- Andrew Beatty<br><br>
 
 ## Project prepared by Eva Czeyda-Pommersheim<br><br>
 ---
